@@ -1,6 +1,5 @@
-#include <Arduino.h> // <- ¡Esta línea es obligatoria en PlatformIO!
+#include <Arduino.h> //
 
-// Definición de pines (puedes cambiarlos según tu placa)
 const int dirPin1 = 5;   // Pin de Dirección
 const int stepPin1 = 4;  // Pin de Pasos
 
@@ -19,6 +18,7 @@ void setup() {
 }
 
 void loop() {
+  //Motor X
   // 1. Girar una vuelta en sentido horario
   digitalWrite(dirPin1, HIGH); // Establece la dirección
   
@@ -29,7 +29,7 @@ void loop() {
     delayMicroseconds(1000);
   }
   
-  delay(1000); // Pausa de 1 segundo
+  delay(1000); 
 
   // 2. Girar una vuelta en sentido antihorario
   digitalWrite(dirPin1, LOW); // Cambia la dirección
@@ -41,8 +41,9 @@ void loop() {
     delayMicroseconds(1000);
   }
   
-  delay(1000); // Pausa de 1 segundo
+  delay(1000); 
 
+  //Motor Y
   // 1. Girar una vuelta en sentido horario
   digitalWrite(dirPin2, HIGH); // Establece la dirección
   
@@ -53,7 +54,7 @@ void loop() {
     delayMicroseconds(1000);
   }
   
-  delay(1000); // Pausa de 1 segundo
+  delay(1000); 
 
   // 2. Girar una vuelta en sentido antihorario
   digitalWrite(dirPin2, LOW); // Cambia la dirección
@@ -65,7 +66,7 @@ void loop() {
     delayMicroseconds(1000);
   }
   
-  delay(1000); // Pausa de 1 segundo
+  delay(1000); 
 
   digitalWrite(15, HIGH);
   delay(10);
