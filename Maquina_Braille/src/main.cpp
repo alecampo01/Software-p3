@@ -68,6 +68,7 @@ void loop() {
   
   delay(1000); 
 
+  //Prueba del solenoide
   digitalWrite(15, HIGH);
   delay(10);
   digitalWrite(15, LOW);
