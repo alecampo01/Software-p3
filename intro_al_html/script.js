@@ -7,7 +7,7 @@ let ultimoGcode = "";
 btnTraducir.addEventListener('click', () => {
     const inputTexto = document.querySelector('textarea').value;
     const inputArchivo = document.getElementById('archivoWord').files[0];
-    const urlBackend = 'https://traductor-braille-backend.onrender.com/traducir';
+    const urlBackend = 'https://the-braille-interpreter.onrender.com//traducir';
 
     textoResultado.value = "Traduciendo y procesando G-Code...";
     const formData = new FormData();

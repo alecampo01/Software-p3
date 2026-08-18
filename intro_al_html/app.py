@@ -87,8 +87,8 @@ def traducir():
     
     return jsonify({
         'status': 'ok',
-        'texto_original': texto,
-        'braille': braille_resultado
+        'braille': braille_resultado,
+        'gcode': gcode_resultado
     })
     
 if __name__ == '__main__':
