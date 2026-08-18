@@ -1,0 +1,79 @@
+/* Configuramos el fondo de la pantalla y el tipo de letra */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra la aplicación en la pantalla */
+}
+
+/* Creamos una "tarjeta" blanca que contenga nuestra aplicación */
+.contenedor {
+    background-color: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Estilo para las cajas de texto */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical; /* Permite al usuario estirar la caja solo hacia abajo */
+    box-sizing: border-box; /* Evita que la caja se salga de los bordes */
+    margin-top: 10px;
+}
+
+/* Espaciado para el botón de subir archivo */
+input[type="file"] {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+/* Alineamos los botones lado a lado */
+.botones {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+/* Estilo principal de los botones (Botón Traducir) */
+button {
+    background-color: #2563eb; /* Azul brillante */
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Animación suave */
+    flex: 1; /* Hace que ambos botones midan exactamente lo mismo */
+}
+
+/* Efecto al pasar el mouse por encima */
+button:hover {
+    background-color: #1d4ed8; /* Azul más oscuro */
+}
+
+/* Estilo alternativo para el botón CNC */
+.boton-secundario {
+    background-color: #10b981; /* Verde esmeralda */
+}
+
+.boton-secundario:hover {
+    background-color: #059669; /* Verde más oscuro */
+}

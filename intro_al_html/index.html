@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro_al_html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+    <header>
+        <h1>Braille interpreter</h1>
+        <p>Generador de trayectorias CNC para impresion en braille</p>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Ingresa tu texto</h2>
+            <textarea rows="5" cols="50" placeholder="Escribe o pega tu texto aqui..."></textarea>
+            <p>O si prefieres: </p>
+            <label for="archivoWord">Sube un archivo Word(.docx)</label>
+            <input type="file" id="archivoWord" accept=".docx">
+        </section>
+
+        <br>
+
+        <section>
+            <button id="btnTraducir">Traducir al Braille</button>
+            <button class="boton-secundario" id="btnCnc">Generar Código CNC</button>
+        </section>
+
+        <section>
+            <h2>2. Resultado</h2>
+            <textarea id="textoResultado" rows="8" readonly placeholder="Aquí aparecerá la traducción..."></textarea>
+        </section>
+
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
