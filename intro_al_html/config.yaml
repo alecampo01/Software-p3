@@ -1,0 +1,36 @@
+board: ESP32-S3 Braille CNC
+name: Braille_CNC_interpreter
+
+kinematics:
+  Cartesian:
+
+axes:
+  x:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 2000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 200.000
+    motor0:
+      limit_neg_pin: NO_PIN
+      stepster:
+        step_pin: gpio.4
+        dir_pin: gpio.5    
+        disable_pin: NO_PIN
+  y:
+    steps_per_mm: 80.000
+    max_rate_mm_per_min: 2000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 200.000
+    motor0:
+      limit_neg_pin: NO_PIN
+      stepster:
+        step_pin: gpio.6
+        dir_pin: gpio.7    # Cambiar por tu pin físico
+        disable_pin: NO_PIN
+
+spindle:
+  relay:
+    output_pin: gpio.15
+    direction_pin: NO_PIN
+    enable_pin: NO_PIN
+    disable_with_s0: false
