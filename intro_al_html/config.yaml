@@ -14,7 +14,7 @@ axes:
       limit_neg_pin: NO_PIN
       standard_stepper:
         step_pin: gpio.4
-        dir_pin: gpio.5
+        direction_pin: gpio.5
         disable_pin: NO_PIN 
   y:
     steps_per_mm: 80.000
@@ -25,12 +25,11 @@ axes:
       limit_neg_pin: NO_PIN
       standard_stepper:
         step_pin: gpio.6
-        dir_pin: gpio.7
+        direction_pin: gpio.7
         disable_pin: NO_PIN 
 
-spindles:
-  relay:
-    output_pin: gpio.15
-    direction_pin: NO_PIN
-    enable_pin: NO_PIN
-    disable_with_s0: false
+relay:
+  output_pin: gpio.15
+  direction_pin: NO_PIN
+  enable_pin: NO_PIN
+  disable_with_s0: false
