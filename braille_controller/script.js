@@ -31,6 +31,7 @@ async function hacerPeticion(url, opciones) {
         
         textoResultado.value = datos.braille; // 
         ultimoGcode = datos.gcode; // 
+        localStorage.setItem('lastGcode', datos.gcode); // Save for dashboard 
         
     } catch (error) {
         textoResultado.value = "Error al conectar con el servidor.";
